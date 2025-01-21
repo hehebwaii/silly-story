@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Silly Story Generator</title>
+  <title>Personalized Silly Story Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Silly Story Generator</h1>
-    <p>Click the button below to generate a silly story!</p>
+    <h1>Personalized Silly Story Generator</h1>
+    <p>Enter your name and click the button to generate a story just for you!</p>
+    
+    <!-- Input field for name -->
+    <input type="text" id="userName" placeholder="Enter your name" />
+    
+    <!-- Button to generate the story -->
     <button id="generateStory">Generate Story</button>
+    
+    <!-- Section to display the story -->
     <div id="storyOutput" class="story"></div>
   </div>
   <script src="script.js"></script>
