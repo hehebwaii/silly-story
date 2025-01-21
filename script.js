@@ -3,10 +3,10 @@ const places = ["park", "museum", "zoo", "beach"];
 const objects = ["giant banana", "talking robot", "mystical book", "dancing shoe"];
 const actions = ["screamed", "laughed", "sang", "cried"];
 
-// Function to generate a story
+// Function to generate a personalized story
 function generateStory() {
   const userNameInput = document.getElementById("userName").value.trim();
-  const userName = userNameInput || "Someone"; // Default to "Someone" if no name is entered
+  const userName = userNameInput || "Someone"; // Default to "Someone" if no name is provided
 
   const randomPlace = places[Math.floor(Math.random() * places.length)];
   const randomObject = objects[Math.floor(Math.random() * objects.length)];
@@ -16,5 +16,5 @@ function generateStory() {
   document.getElementById("storyOutput").innerText = story;
 }
 
-// Add event listener to the button
+// Event listener for the button
 document.getElementById("generateStory").addEventListener("click", generateStory);
